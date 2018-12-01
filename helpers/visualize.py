@@ -36,9 +36,9 @@ def plot(train_x = [], train_y = [], predict_x = [], predict_y = [], test_x = []
 def plot_scatter(x, y):
     for i in range(x.shape[0]):
         if y[i] == 1:
-            plt.scatter(x[i][0], y[i], marker='+', c = 100)
+            plt.scatter(x[i][0], x[i][1], marker='+', c = 100)
         else:
-            plt.scatter(x[i][0], y[i], marker='o', c=100)
+            plt.scatter(x[i][0], x[i][1], marker='o', c=100)
 
 # df = np.array([[3,3],
 #                [4,3],
